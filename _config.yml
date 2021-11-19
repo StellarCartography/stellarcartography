@@ -12,7 +12,7 @@ title:            The Stellar Cartography Lab
 tagline:          'Stars for Star Sake'
 description:      'An astronomy research group focusing on variable stars, centered around collaboration and asking creative questions.'
 url:              https://stellarcartography.space
-baseurl:          ''
+baseurl:          '/'
 
 author:
   name:           'James Davenport'
