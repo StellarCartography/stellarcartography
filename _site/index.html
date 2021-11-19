@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      The Stellar Cartography Lab &middot; Stars for Star Sake
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="public/css/poole.css">
+  <link rel="stylesheet" href="public/css/syntax.css">
+  <link rel="stylesheet" href="public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Genos:ital@1&family=Nova+Round&display=swap" rel="stylesheet">
+  
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body  class="theme-base-0d  layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="">
+          The Stellar Cartography Lab
+        </a>
+      </h1>
+      <p class="lead">An astronomy research group focusing on variable stars, centered around collaboration and asking creative questions.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <!-- <a class="sidebar-nav-item" href="https://github.com/StellarCartography//archive/v.zip">Download</a> -->
+      <a class="sidebar-nav-item" href="https://github.com/StellarCartography/">GitHub Page</a>
+      <span class="sidebar-nav-item">Currently v</span>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2021/11/18/scallops/">
+        Flares and Scallops
+      </a>
+    </h1>
+
+    <span class="post-date">18 Nov 2021</span>
+
+    <h2 id="what-are-scallops">What are Scallops?</h2>
+
+<p>The late John Stauffer first showed me these stars from K2</p>
+
+<p>Zahn+2019
+https://ui.adsabs.harvard.edu/abs/2019ApJ…876..127Z</p>
+
+<p>more from Gunther 2020
+https://ui.adsabs.harvard.edu/abs/2020arXiv200811681G</p>
+
+<p>Stauffer 2021, his last paper
+https://ui.adsabs.harvard.edu/abs/2021AJ….161…60S</p>
+
+<p>what are they?!
+Zahn have a nice model of a spotted star + a dark/opaque disk. I quite like this model.</p>
+
+<h2 id="a-weird-flare">A weird flare</h2>
+
+<p>Zahn+2019
+https://ui.adsabs.harvard.edu/abs/2019ApJ…876..127Z
+highlights TIC 206544316
+<img src="https://stellarcartography.space/assets/scallop_flare.png" alt="" /></p>
+
+<p>There’s this big flare, and it stays bright… wtf?!</p>
+
+<p>what if we modeled the light curve empirically w/ a GP, then fit the flare? Can we show the flare is rotating in/out of view? Is the excess brightness later due to the long tail of the flare?</p>
+
+<h2 id="can-we-build-a-simple-model">Can we build a simple model?</h2>
+<p>we need a starspot model + a disk</p>
+
+<p>now there’s 4 TESS Sectors worth of 2-min data, with several interesting flares. Get it all! Phase fold vs time</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2021/11/16/gaia-flares/">
+        Flares in Gaia DR3
+      </a>
+    </h1>
+
+    <span class="post-date">16 Nov 2021</span>
+
+    <h2 id="flare-temperatures-the-next-frontier">Flare Temperatures, the Next Frontier</h2>
+
+<h2 id="gaia-spectra">Gaia Spectra</h2>
+
+<h2 id="plan">Plan</h2>
+<p>train on alert data… 
+http://gsaweb.ast.cam.ac.uk/alerts/alert/Gaia21brw/</p>
+
+<p>Need to hack it together a bit</p>
+
+<p>sepctra are interesting
+https://www.cosmos.esa.int/web/gaia/iow_20140605</p>
+
+<p>but spectra aren’t digital… so digitize some
+https://automeris.io/WebPlotDigitizer/download.html</p>
+
+<p>approximate spectral resolution 
+https://www.cosmos.esa.int/web/gaia/resolution
+wavelength calibration
+https://arxiv.org/abs/2106.01752</p>
+
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2018/07/05/mentorship/">
+        Mentorship
+      </a>
+    </h1>
+
+    <span class="post-date">05 Jul 2018</span>
+
+    <h2 id="a-new-endeavor">A New Endeavor</h2>
+
+<p>I am currently planning to start a weekly “group meeting” at UW Astronomy. I have lots of thoughts about what this can and should be, both for myself and students…
+what it decidedly is <em>not</em> is a group focused on a single science topic. There will be general science themes to be sure (to wit: I’m not <em>much</em> help for people doing cosmology), but the goal is to provide a time, place, and environment where people will be collaborative, and a group that will drive productivity to further the success of the members. A good research group is one where the rising tide of ideas and collaboration lifts all boats.
+I have so much more to say about this topic, but this post is focused on one aspect: the role of mentorship.</p>
+
+<p>I’ve been doing two important things to prepare for this group meeting:
+1) reflecting on my own journey recently, examining when I felt happiest, when I felt most productive.
+2) having coffee with as many people to talk about their work, academic journeys, what has worked or failed for them, etc.
+One dominating theme has come forward from both of these avenues of inquiry: mentorship can make or break a PhD experience.</p>
+
+<p>Mind you, mentoring is not the only silver bullet, because that would be the ultimate gatekeeping for success. Nor am I claiming this is any sort of new idea.
+The value of good mentorship has long been known, and the impact a mentor (or advocate) can have on a career - both for good or ill - is nearly limitless.</p>
+
+<p>Here is my epiphany, which I believe to be absolutely true: <strong>my success in academia will be tied most directly to how good of a mentor and collaborator I am to the people around me.</strong></p>
+
+<h2 id="mentorship-is-active">Mentorship is Active</h2>
+
+<p>Some selected takeaways from people I’ve had coffee with - literally all of whom I think are brilliant and inspiring:</p>
+
+<ul>
+  <li>they’ve wandered in the woods with a project for years, unsure what the end goal is</li>
+  <li>they are unproductive</li>
+  <li>projects take too long</li>
+  <li>their group is not including them in the exciting work</li>
+  <li>they lack direction, both broadly or specifically</li>
+  <li>they feel trapped or abandoned</li>
+  <li>they feel pressured to work on a certain topic, or avoid certain ones</li>
+  <li>unsure where their career is heading, or pressure to take a certain path</li>
+  <li>don’t see their mentor regularly</li>
+</ul>
+
+<p>and the list goes on… <strong>These can all be framed as mentoring problems</strong>.</p>
+
+<p>Many of these may also be symptoms of other issues that need attention. Mental health is a serious concern - take care of yourself!!! - and graduate school has a nasty habit of chipping away at our health in so many ways.</p>
+
+<p>My hope is that this group meeting will allow me to provide some structured mentorship and fellowship for many students. Being a (good) mentor is a major commitment of time, energy, ideas, and heart. It requires <strong>actively</strong> stepping in and helping, intervening, guiding, listening… if a student is failing and hasn’t come to you, ultimately this is your fault. My preference is a two-pronged approach to giving mentoring: a group meeting that can help you get in the habit of presenting and synthesizing your work, and regular one-on-one sessions for pair-coding or deep-dives. My inspiration is my thesis advisor, who (at her mentoring peak) was able to keep the detailed progress of a dozen student’s projects in her mind, and was ready to advise or advertise them at a moments notice.</p>
+
+<h2 id="creative-environments-require-active-leadership">Creative Environments Require Active Leadership</h2>
+
+<p>Creating the magic, perfect environment where brilliant ideas can flourish, and where researchers can do their best work… is not trivial. Much has been said and written about the importance of uninterrupted solitary time, interactive sharing time, <a href="https://en.wikipedia.org/wiki/Building_20">physical environments</a> that breed creativity, social/group dynamics. Sometimes a lack of leadership or formal structure is credited great achievements in collaboration or creativity - but I think that misses entirely the real value of a leader or mentor who can stoke the fires of creativity and give you the time and space to fail as needed. Highly productive, equitable, inclusive research groups don’t just magically happen. They are cultivated. I have witnessed first hand what can happen when the mentor stops paying close attention for a year, and so many of the stories I’ve heard during my “coffee chats” can be summed up as a lack of active oversight and direction at key times.</p>
+
+<p>I’m currently reading a <a href="https://www.amazon.com/Creative-Habit-Learn-Use-Life/dp/1480589837">book</a> about making creativity a habit, and it mirrors much about what I read last year on <a href="https://www.amazon.com/How-Write-Lot-Practical-Productive/dp/1591477433">writing productivity</a>: get up and be creative for a fixed amount of time every day. When inspiration, excitement, and momentum fail you, habit (and habit-building structures) will save you. Another subtle angle to this is that habit - the magical power of just showing up - is key for not only generating deeply creative work (i.e. being receptive to divine inspiration, if such a thing exists) but also in the ability to be prolific (i.e. how to write a LOT). A good group meeting is one that encourages habit, that helps remove obstacles and adds energy to our work.</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2018/05/21/seti/">
+        SETI with ZTF
+      </a>
+    </h1>
+
+    <span class="post-date">21 May 2018</span>
+
+    <h2 id="intro">Intro</h2>
+
+<p><a href="https://speakerdeck.com/jradavenport/seti-with-ztf-and-lsst">These slides</a> given (remotely) to the <a href="https://vasconsite.wordpress.com">VASCO</a> workshop in early 2018</p>
+
+<p>The Point (TM): ZTF (or LSST) isn’t necessarily the ideal place to do SETI work, but we get it for “free”. Might as well be looking!
+It could be a critical piece of the ZTF/LSST - Astrobiology connection.</p>
+
+<h2 id="ztf-is-online">ZTF is Online</h2>
+<p>data streams are rolling now, we should put in alert trigger thingys.</p>
+
+<p>lightcurves will come. do batch analysis later</p>
+
+<h2 id="search-methods">Search Methods</h2>
+
+<p>Here are some actual approaches I have come up with that we might pursue, roughly in order of ease of implementation. This list should be viewed as perpetually in-prep.</p>
+
+<p>1) alerts from the stars within the “restricted Earth Transit Zone (<a href="http://adsabs.harvard.edu/abs/2016AsBio..16..259H">Heller &amp; Pudritz 2016</a>)</p>
+<ul>
+  <li>anytime we can see them w/ ZTF</li>
+  <li>especially at our opposition (i.e. when <em>we</em> appear to transit)</li>
+</ul>
+
+<p>2) alerts from known exoplanet host systems</p>
+<ul>
+  <li>use an existing archive of exoplanets, like <a href="https://exoplanetarchive.ipac.caltech.edu">this</a> or <a href="http://exoplanets.org">this</a></li>
+</ul>
+
+<p>3) alerts coinciding with any known transit conjunction (mid-transit)</p>
+<ul>
+  <li>allow some tolerance window to account for TTVs</li>
+</ul>
+
+<p>4) VASCO-type events, stars appearing or disappearing.</p>
+<ul>
+  <li>Esp. stars appearing that do not have a Gaia DR2 detection, for example.</li>
+  <li>stars disappearing will be very interesting</li>
+</ul>
+
+<p>5) event (alert?) coordination/synchronization (e.g. see <a href="http://adsabs.harvard.edu/abs/1977SvA....21..251M">Makovetskii 1977</a>, <a href="http://adsabs.harvard.edu/abs/2004IAUS..213..409S">Shostak 2004</a>)</p>
+<ul>
+  <li>especially the SETI ellipsoid, a’la SN1987A (<a href="http://adsabs.harvard.edu/abs/1994Ap%26SS.214..209L">Lemarchand 1994</a>)</li>
+  <li>could use galactic novae to provide time/place</li>
+  <li>list of <a href="https://asd.gsfc.nasa.gov/Koji.Mukai/novae/novae.html">new Novae</a></li>
+  <li><a href="http://www.cbat.eps.harvard.edu/nova_list.html">historic Novae</a> (till 2010)</li>
+</ul>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2017/09/20/k2rot/">
+        Stellar Rotation in K2
+      </a>
+    </h1>
+
+    <span class="post-date">20 Sep 2017</span>
+
+    <h2 id="intro">Intro</h2>
+
+<p><em>this post is in-prep</em></p>
+
+<p>Kepler measured lots of rotation periods. Differential rotation was… harder. Or maybe impossible in many cases.</p>
+
+<h2 id="in-walks-gaia">In walks Gaia</h2>
+
+<p>wrote <a href="http://adsabs.harvard.edu/abs/2016arXiv161008563D">short paper</a> last year on rotation Kepler, using Gaia to filter our subgiants, find period bimodality extends from M dwarfs all the way to G dwarfs.</p>
+
+<p><img src="https://stellarcartography.space/assets/fig3_mod.jpg" alt="" /></p>
+
+<p>time to extend this to K2, search stars of more ages/masses. have NASA-ADAP grant to study this with Ruth, need students!</p>
+
+<h2 id="fun-avenues">Fun Avenues</h2>
+
+<p>this project isn’t just about the nuts &amp; bolts of measuring rotation, though that is a neat project in of itself.</p>
+
+<ul>
+  <li>calibrate gyrochronology</li>
+  <li>define 3d structure/extent of the period bimodality</li>
+  <li>star formation history, how localized/coherent it can be. Compare to SFH in M31 from HST!</li>
+  <li>look for influence of spiral arm passage?</li>
+  <li>look for substructure in the 5-D space of (X,Y,Z, Color, Period)</li>
+  <li>rotation versus OTHER THINGS, like metallicity, planet(s), age…</li>
+  <li>rotation <em>off</em> the main sequence (e.g. Subgiant evolution, binaries, blue stragglers?)</li>
+</ul>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="page2">Older</a>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>The Stellar Cartography Lab</title>
+ <link href="https://stellarcartography.space/atom.xml" rel="self"/>
+ <link href="https://stellarcartography.space/"/>
+ <updated>2021-11-18T16:13:45-08:00</updated>
+ <id>https://stellarcartography.space</id>
+ <author>
+   <name>James Davenport</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Flares and Scallops</title>
+   <link href="https://stellarcartography.space/2021/11/18/scallops/"/>
+   <updated>2021-11-18T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2021/11/18/scallops</id>
+   <content type="html">&lt;h2 id=&quot;what-are-scallops&quot;&gt;What are Scallops?&lt;/h2&gt;
+
+&lt;p&gt;The late John Stauffer first showed me these stars from K2&lt;/p&gt;
+
+&lt;p&gt;Zahn+2019
+https://ui.adsabs.harvard.edu/abs/2019ApJ…876..127Z&lt;/p&gt;
+
+&lt;p&gt;more from Gunther 2020
+https://ui.adsabs.harvard.edu/abs/2020arXiv200811681G&lt;/p&gt;
+
+&lt;p&gt;Stauffer 2021, his last paper
+https://ui.adsabs.harvard.edu/abs/2021AJ….161…60S&lt;/p&gt;
+
+&lt;p&gt;what are they?!
+Zahn have a nice model of a spotted star + a dark/opaque disk. I quite like this model.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-weird-flare&quot;&gt;A weird flare&lt;/h2&gt;
+
+&lt;p&gt;Zahn+2019
+https://ui.adsabs.harvard.edu/abs/2019ApJ…876..127Z
+highlights TIC 206544316
+&lt;img src=&quot;https://stellarcartography.space/assets/scallop_flare.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s this big flare, and it stays bright… wtf?!&lt;/p&gt;
+
+&lt;p&gt;what if we modeled the light curve empirically w/ a GP, then fit the flare? Can we show the flare is rotating in/out of view? Is the excess brightness later due to the long tail of the flare?&lt;/p&gt;
+
+&lt;h2 id=&quot;can-we-build-a-simple-model&quot;&gt;Can we build a simple model?&lt;/h2&gt;
+&lt;p&gt;we need a starspot model + a disk&lt;/p&gt;
+
+&lt;p&gt;now there’s 4 TESS Sectors worth of 2-min data, with several interesting flares. Get it all! Phase fold vs time&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Flares in Gaia DR3</title>
+   <link href="https://stellarcartography.space/2021/11/16/gaia-flares/"/>
+   <updated>2021-11-16T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2021/11/16/gaia-flares</id>
+   <content type="html">&lt;h2 id=&quot;flare-temperatures-the-next-frontier&quot;&gt;Flare Temperatures, the Next Frontier&lt;/h2&gt;
+
+&lt;h2 id=&quot;gaia-spectra&quot;&gt;Gaia Spectra&lt;/h2&gt;
+
+&lt;h2 id=&quot;plan&quot;&gt;Plan&lt;/h2&gt;
+&lt;p&gt;train on alert data… 
+http://gsaweb.ast.cam.ac.uk/alerts/alert/Gaia21brw/&lt;/p&gt;
+
+&lt;p&gt;Need to hack it together a bit&lt;/p&gt;
+
+&lt;p&gt;sepctra are interesting
+https://www.cosmos.esa.int/web/gaia/iow_20140605&lt;/p&gt;
+
+&lt;p&gt;but spectra aren’t digital… so digitize some
+https://automeris.io/WebPlotDigitizer/download.html&lt;/p&gt;
+
+&lt;p&gt;approximate spectral resolution 
+https://www.cosmos.esa.int/web/gaia/resolution
+wavelength calibration
+https://arxiv.org/abs/2106.01752&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Mentorship</title>
+   <link href="https://stellarcartography.space/2018/07/05/mentorship/"/>
+   <updated>2018-07-05T00:00:00-07:00</updated>
+   <id>https://stellarcartography.space/2018/07/05/mentorship</id>
+   <content type="html">&lt;h2 id=&quot;a-new-endeavor&quot;&gt;A New Endeavor&lt;/h2&gt;
+
+&lt;p&gt;I am currently planning to start a weekly “group meeting” at UW Astronomy. I have lots of thoughts about what this can and should be, both for myself and students…
+what it decidedly is &lt;em&gt;not&lt;/em&gt; is a group focused on a single science topic. There will be general science themes to be sure (to wit: I’m not &lt;em&gt;much&lt;/em&gt; help for people doing cosmology), but the goal is to provide a time, place, and environment where people will be collaborative, and a group that will drive productivity to further the success of the members. A good research group is one where the rising tide of ideas and collaboration lifts all boats.
+I have so much more to say about this topic, but this post is focused on one aspect: the role of mentorship.&lt;/p&gt;
+
+&lt;p&gt;I’ve been doing two important things to prepare for this group meeting:
+1) reflecting on my own journey recently, examining when I felt happiest, when I felt most productive.
+2) having coffee with as many people to talk about their work, academic journeys, what has worked or failed for them, etc.
+One dominating theme has come forward from both of these avenues of inquiry: mentorship can make or break a PhD experience.&lt;/p&gt;
+
+&lt;p&gt;Mind you, mentoring is not the only silver bullet, because that would be the ultimate gatekeeping for success. Nor am I claiming this is any sort of new idea.
+The value of good mentorship has long been known, and the impact a mentor (or advocate) can have on a career - both for good or ill - is nearly limitless.&lt;/p&gt;
+
+&lt;p&gt;Here is my epiphany, which I believe to be absolutely true: &lt;strong&gt;my success in academia will be tied most directly to how good of a mentor and collaborator I am to the people around me.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mentorship-is-active&quot;&gt;Mentorship is Active&lt;/h2&gt;
+
+&lt;p&gt;Some selected takeaways from people I’ve had coffee with - literally all of whom I think are brilliant and inspiring:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;they’ve wandered in the woods with a project for years, unsure what the end goal is&lt;/li&gt;
+  &lt;li&gt;they are unproductive&lt;/li&gt;
+  &lt;li&gt;projects take too long&lt;/li&gt;
+  &lt;li&gt;their group is not including them in the exciting work&lt;/li&gt;
+  &lt;li&gt;they lack direction, both broadly or specifically&lt;/li&gt;
+  &lt;li&gt;they feel trapped or abandoned&lt;/li&gt;
+  &lt;li&gt;they feel pressured to work on a certain topic, or avoid certain ones&lt;/li&gt;
+  &lt;li&gt;unsure where their career is heading, or pressure to take a certain path&lt;/li&gt;
+  &lt;li&gt;don’t see their mentor regularly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and the list goes on… &lt;strong&gt;These can all be framed as mentoring problems&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Many of these may also be symptoms of other issues that need attention. Mental health is a serious concern - take care of yourself!!! - and graduate school has a nasty habit of chipping away at our health in so many ways.&lt;/p&gt;
+
+&lt;p&gt;My hope is that this group meeting will allow me to provide some structured mentorship and fellowship for many students. Being a (good) mentor is a major commitment of time, energy, ideas, and heart. It requires &lt;strong&gt;actively&lt;/strong&gt; stepping in and helping, intervening, guiding, listening… if a student is failing and hasn’t come to you, ultimately this is your fault. My preference is a two-pronged approach to giving mentoring: a group meeting that can help you get in the habit of presenting and synthesizing your work, and regular one-on-one sessions for pair-coding or deep-dives. My inspiration is my thesis advisor, who (at her mentoring peak) was able to keep the detailed progress of a dozen student’s projects in her mind, and was ready to advise or advertise them at a moments notice.&lt;/p&gt;
+
+&lt;h2 id=&quot;creative-environments-require-active-leadership&quot;&gt;Creative Environments Require Active Leadership&lt;/h2&gt;
+
+&lt;p&gt;Creating the magic, perfect environment where brilliant ideas can flourish, and where researchers can do their best work… is not trivial. Much has been said and written about the importance of uninterrupted solitary time, interactive sharing time, &lt;a href=&quot;https://en.wikipedia.org/wiki/Building_20&quot;&gt;physical environments&lt;/a&gt; that breed creativity, social/group dynamics. Sometimes a lack of leadership or formal structure is credited great achievements in collaboration or creativity - but I think that misses entirely the real value of a leader or mentor who can stoke the fires of creativity and give you the time and space to fail as needed. Highly productive, equitable, inclusive research groups don’t just magically happen. They are cultivated. I have witnessed first hand what can happen when the mentor stops paying close attention for a year, and so many of the stories I’ve heard during my “coffee chats” can be summed up as a lack of active oversight and direction at key times.&lt;/p&gt;
+
+&lt;p&gt;I’m currently reading a &lt;a href=&quot;https://www.amazon.com/Creative-Habit-Learn-Use-Life/dp/1480589837&quot;&gt;book&lt;/a&gt; about making creativity a habit, and it mirrors much about what I read last year on &lt;a href=&quot;https://www.amazon.com/How-Write-Lot-Practical-Productive/dp/1591477433&quot;&gt;writing productivity&lt;/a&gt;: get up and be creative for a fixed amount of time every day. When inspiration, excitement, and momentum fail you, habit (and habit-building structures) will save you. Another subtle angle to this is that habit - the magical power of just showing up - is key for not only generating deeply creative work (i.e. being receptive to divine inspiration, if such a thing exists) but also in the ability to be prolific (i.e. how to write a LOT). A good group meeting is one that encourages habit, that helps remove obstacles and adds energy to our work.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>SETI with ZTF</title>
+   <link href="https://stellarcartography.space/2018/05/21/seti/"/>
+   <updated>2018-05-21T00:00:00-07:00</updated>
+   <id>https://stellarcartography.space/2018/05/21/seti</id>
+   <content type="html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/jradavenport/seti-with-ztf-and-lsst&quot;&gt;These slides&lt;/a&gt; given (remotely) to the &lt;a href=&quot;https://vasconsite.wordpress.com&quot;&gt;VASCO&lt;/a&gt; workshop in early 2018&lt;/p&gt;
+
+&lt;p&gt;The Point (TM): ZTF (or LSST) isn’t necessarily the ideal place to do SETI work, but we get it for “free”. Might as well be looking!
+It could be a critical piece of the ZTF/LSST - Astrobiology connection.&lt;/p&gt;
+
+&lt;h2 id=&quot;ztf-is-online&quot;&gt;ZTF is Online&lt;/h2&gt;
+&lt;p&gt;data streams are rolling now, we should put in alert trigger thingys.&lt;/p&gt;
+
+&lt;p&gt;lightcurves will come. do batch analysis later&lt;/p&gt;
+
+&lt;h2 id=&quot;search-methods&quot;&gt;Search Methods&lt;/h2&gt;
+
+&lt;p&gt;Here are some actual approaches I have come up with that we might pursue, roughly in order of ease of implementation. This list should be viewed as perpetually in-prep.&lt;/p&gt;
+
+&lt;p&gt;1) alerts from the stars within the “restricted Earth Transit Zone (&lt;a href=&quot;http://adsabs.harvard.edu/abs/2016AsBio..16..259H&quot;&gt;Heller &amp;amp; Pudritz 2016&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;anytime we can see them w/ ZTF&lt;/li&gt;
+  &lt;li&gt;especially at our opposition (i.e. when &lt;em&gt;we&lt;/em&gt; appear to transit)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2) alerts from known exoplanet host systems&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;use an existing archive of exoplanets, like &lt;a href=&quot;https://exoplanetarchive.ipac.caltech.edu&quot;&gt;this&lt;/a&gt; or &lt;a href=&quot;http://exoplanets.org&quot;&gt;this&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;3) alerts coinciding with any known transit conjunction (mid-transit)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;allow some tolerance window to account for TTVs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;4) VASCO-type events, stars appearing or disappearing.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Esp. stars appearing that do not have a Gaia DR2 detection, for example.&lt;/li&gt;
+  &lt;li&gt;stars disappearing will be very interesting&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5) event (alert?) coordination/synchronization (e.g. see &lt;a href=&quot;http://adsabs.harvard.edu/abs/1977SvA....21..251M&quot;&gt;Makovetskii 1977&lt;/a&gt;, &lt;a href=&quot;http://adsabs.harvard.edu/abs/2004IAUS..213..409S&quot;&gt;Shostak 2004&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;especially the SETI ellipsoid, a’la SN1987A (&lt;a href=&quot;http://adsabs.harvard.edu/abs/1994Ap%26SS.214..209L&quot;&gt;Lemarchand 1994&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;could use galactic novae to provide time/place&lt;/li&gt;
+  &lt;li&gt;list of &lt;a href=&quot;https://asd.gsfc.nasa.gov/Koji.Mukai/novae/novae.html&quot;&gt;new Novae&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cbat.eps.harvard.edu/nova_list.html&quot;&gt;historic Novae&lt;/a&gt; (till 2010)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Stellar Rotation in K2</title>
+   <link href="https://stellarcartography.space/2017/09/20/k2rot/"/>
+   <updated>2017-09-20T00:00:00-07:00</updated>
+   <id>https://stellarcartography.space/2017/09/20/k2rot</id>
+   <content type="html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;this post is in-prep&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Kepler measured lots of rotation periods. Differential rotation was… harder. Or maybe impossible in many cases.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-walks-gaia&quot;&gt;In walks Gaia&lt;/h2&gt;
+
+&lt;p&gt;wrote &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv161008563D&quot;&gt;short paper&lt;/a&gt; last year on rotation Kepler, using Gaia to filter our subgiants, find period bimodality extends from M dwarfs all the way to G dwarfs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://stellarcartography.space/assets/fig3_mod.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;time to extend this to K2, search stars of more ages/masses. have NASA-ADAP grant to study this with Ruth, need students!&lt;/p&gt;
+
+&lt;h2 id=&quot;fun-avenues&quot;&gt;Fun Avenues&lt;/h2&gt;
+
+&lt;p&gt;this project isn’t just about the nuts &amp;amp; bolts of measuring rotation, though that is a neat project in of itself.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;calibrate gyrochronology&lt;/li&gt;
+  &lt;li&gt;define 3d structure/extent of the period bimodality&lt;/li&gt;
+  &lt;li&gt;star formation history, how localized/coherent it can be. Compare to SFH in M31 from HST!&lt;/li&gt;
+  &lt;li&gt;look for influence of spiral arm passage?&lt;/li&gt;
+  &lt;li&gt;look for substructure in the 5-D space of (X,Y,Z, Color, Period)&lt;/li&gt;
+  &lt;li&gt;rotation versus OTHER THINGS, like metallicity, planet(s), age…&lt;/li&gt;
+  &lt;li&gt;rotation &lt;em&gt;off&lt;/em&gt; the main sequence (e.g. Subgiant evolution, binaries, blue stragglers?)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Photometric Metallicities</title>
+   <link href="https://stellarcartography.space/2017/04/03/feh/"/>
+   <updated>2017-04-03T00:00:00-07:00</updated>
+   <id>https://stellarcartography.space/2017/04/03/feh</id>
+   <content type="html">&lt;p&gt;Here is a cool figure that I made with &lt;a href=&quot;http://www.sarahjaneschmidt.com&quot;&gt;S. J. Schmidt&lt;/a&gt; a few years ago at a research &lt;a href=&quot;https://www.instagram.com/p/xvLZM1lCMc/&quot;&gt;retreat in beautiful Friday Harbor&lt;/a&gt;, based on work she was doing with &lt;a href=&quot;http://www.sdss3.org/surveys/apogee.php&quot;&gt;APOGEE&lt;/a&gt; + &lt;a href=&quot;https://www.nasa.gov/mission_pages/WISE/main/index.html&quot;&gt;WISE&lt;/a&gt; data for low-mass stars (see very relevant paper &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016MNRAS.460.2611S&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://stellarcartography.space/assets/w1w2_rz_feh.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We added to her APOGEE work by including dwarf stars processed by the SDSS Stellar Parameter Pipeline (SSPP).&lt;/p&gt;
+
+&lt;p&gt;What comes out of this figure is a potentially useful result: you can measure the metallicity of a star (roughly) using it’s WISE (W1-W2) color!&lt;/p&gt;
+
+&lt;p&gt;For M dwarfs, the [Fe/H] values can be determined by subtracting the measured (W1-W2) color from the &lt;a href=&quot;https://arxiv.org/abs/1403.1875&quot;&gt;stellar locus&lt;/a&gt; value for a given (r-z) color. This is a fairly small amplitude signal, however, with the offset in (W1-W2) having a max of +/-0.1 mag. The effect is less pronounced for earlier type stars (GK) measured by SDSS, but is still in the same direction about the locus.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;What is the cause of this signal?
+    &lt;ul&gt;
+      &lt;li&gt;molecular features that show up for cool stars and are metallicity dependent I guess&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If we update the sample w/ latest public data from SDSS (BOSS) and APOGEE, is the signal still there?&lt;/li&gt;
+  &lt;li&gt;Can we find more &lt;a href=&quot;https://arxiv.org/abs/1410.0014&quot;&gt;cool dwarfs&lt;/a&gt; in APOGEE? (&amp;gt;M4)
+    &lt;ul&gt;
+      &lt;li&gt;(W1-W2) appears to broaden through M dwarfs. Does it continue?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is the signal at all measurable for earlier type (GK) stars?&lt;/li&gt;
+  &lt;li&gt;Fit a 3D polynomial to parameterize&lt;/li&gt;
+  &lt;li&gt;Redo as function of (J-W1) instead of (r-z)
+    &lt;ul&gt;
+      &lt;li&gt;then doesn’t depend on SDSS photometry, can be done for &lt;em&gt;all WISE stars&lt;/em&gt;!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[Fe/H] map of nearby Milky Way?
+    &lt;ul&gt;
+      &lt;li&gt;use Gaia to pick only dwarfs&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;What I need:&lt;/strong&gt; People who know more about the current state of the field for “chemical cartography” of our Milky Way. Is it still exciting to measure [Fe/H] gradients? Look for kinematic+chemical substructure?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Missing Transits in Kepler</title>
+   <link href="https://stellarcartography.space/2017/03/09/missing/"/>
+   <updated>2017-03-09T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2017/03/09/missing</id>
+   <content type="html">&lt;p&gt;One of the more amusing SETI articles in recent memory is one suggesting lasers could be used to &lt;a href=&quot;https://arxiv.org/abs/1603.08928&quot;&gt;“cloak” a planet’s transit&lt;/a&gt;, by essentially filling in the missing starlight occulted by the planet. This raises an interesting observable question: &lt;strong&gt;Do we ever see transits go missing?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There have been &lt;a href=&quot;http://keplerlightcurves.blogspot.com/2012/09/kic-10319590-disappearing-eclipsing.html&quot;&gt;examples of eclipses&lt;/a&gt; (i.e. two stars) changing depths over the course of the Kepler mission. These are neat, and usually attributed to the viewing angle of the system changing.&lt;/p&gt;
+
+&lt;p&gt;Transit Timing Variations (TTVs) are all the rage, as the slow drift/change of transit occurrence times points to additional planets/bodies in the system. What you observe is a periodic transit event slowly falling ahead/behind schedule as the 3rd body moves around it.&lt;/p&gt;
+
+&lt;p&gt;However this idea is much simpler, and driven by the SETI question: Do any transits fail to show up when we’d expect them to?&lt;/p&gt;
+
+&lt;p&gt;##Game plan:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Get list of all available transiting planets in Kepler &lt;em&gt;without&lt;/em&gt; transit timing variations (TTVs)&lt;/li&gt;
+  &lt;li&gt;Obtain long cadence (30-min) light curves for each system&lt;/li&gt;
+  &lt;li&gt;Using published periods &amp;amp; times for transits, step through light curve and verify transit is present &lt;strong&gt;if&lt;/strong&gt; data is available (i.e. missing data doesn’t count)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On some level this is a “reality check” exercise. I would basically not expect to find any published planets to have missing transits, as I think this would cause undue scatter in the phase-folded data that would have led to their rejection. However given the entertaining SETI angle, &lt;em&gt;it does seem worth it to at least check!&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Stellar activity with GALEX</title>
+   <link href="https://stellarcartography.space/2017/03/06/galex/"/>
+   <updated>2017-03-06T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2017/03/06/galex</id>
+   <content type="html">&lt;p&gt;At the &lt;a href=&quot;http://www.issibern.ch/teams/quasistellflare/&quot;&gt;ISSI meeting&lt;/a&gt; I attended on quasi-periodic pulsations (QPP’s) in stellar flares in Switzerland in 2017-March, we had a great demo of the time-tagged photon data from GALEX by Scott Flemming &amp;amp; Rachel Osten, and the Python toolkit called &lt;a href=&quot;https://github.com/cmillion/gPhoton&quot;&gt;gPhoton&lt;/a&gt;. This enables high time resolution (maybe 1sec) studies of stellar variability in the NUV (and FUV). Many projects came to mind from our group with this tool/dataset, including searching for QPP’s naturally.&lt;/p&gt;
+
+&lt;h2 id=&quot;long-term-variability&quot;&gt;Long-Term Variability&lt;/h2&gt;
+&lt;p&gt;Some sources available with gPhoton have data from up to 10 years of repeated visits with GALEX! This caused me to wonder about the possibility of seeing long time-scale variability in the UV, which we might use to observe stellar activity cycles using GALEX! By using a list of Mt. Wilson H&amp;amp;K stars from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1991ApJS...76..383D&quot;&gt;Duncan et al. (1991)&lt;/a&gt;, I wrote a quick Python script to ping the gPhoton database and count how many visits to each star were available.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;After corresponding with the gPhoton folks, it seems this may be a less efficient approach, and that an SQL-style database is also available for visit-level data that may suffice. Comparison of gPhoton with this coarser data is required!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the decade long light curve for one star, chosen to have the largest number of visits available (over 70). Each data point is the median flux value within the visit. The evolution is very interesting!
+&lt;img src=&quot;https://stellarcartography.space/assets/HD_3765.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create a similar light curve for every Mt. Wilson (and other H&amp;amp;K survey) stars, looking for long-term variations.&lt;/li&gt;
+  &lt;li&gt;Compare the gPhoton with SQL-level data, to ensure variability is real&lt;/li&gt;
+  &lt;li&gt;Compare with the &lt;a href=&quot;http://adsabs.harvard.edu/abs/2013ApJ...766...60G&quot;&gt;Gezari et al. (2013)&lt;/a&gt; catalog of variable GALEX sources&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jradavenport/GALEX_MtWilson/blob/master/tmp.ipynb&quot;&gt;Python notebook on Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;age-activity&quot;&gt;Age-Activity&lt;/h2&gt;
+
+&lt;p&gt;Following my recent exploration of rotation period distributions using &lt;a href=&quot;https://arxiv.org/abs/1610.08563&quot;&gt;Kepler &amp;amp; Gaia data&lt;/a&gt;, I was keen to see if the GALEX data showed any correlation between UV flux and stellar age. Activity levels traced versus stellar age with GALEX have been explored by &lt;a href=&quot;http://adsabs.harvard.edu/abs/2014AJ....148...64S&quot;&gt;Shkolnik &amp;amp; Barman (2014)&lt;/a&gt;, using stars with known ages from clusters.&lt;/p&gt;
+
+&lt;p&gt;Instead of gPhoton, I used a dedicated dataset built from GALEX observations of the Kepler field by &lt;a href=&quot;http://adsabs.harvard.edu/abs/2015ApJ...813..100O&quot;&gt;Olmedo et al. (2015)&lt;/a&gt;. Using the excellent CDS X Match Service, I quickly and effortlessly matched this catalog to the &lt;a href=&quot;http://adsabs.harvard.edu/abs/2014ApJS..211...24M&quot;&gt;McQuillan et al. (2014)&lt;/a&gt; rotation period dataset. To get more photometry, I then matched &lt;em&gt;this&lt;/em&gt; combined catalog to SIMBAD with X Match. In a matter of 30 minutes from the airport I was able to get the data to make this figure:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://stellarcartography.space/assets/galex_rot_test2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For stars with a small range of temperatures, we can see the NUV flux appears to decrease compared to the V-band as a function of rotation period. Here I use the NUV-V color, as it is distance independent, and small bins in temperature to minimize the effect of different stars inhabiting different ranges of rotation period causing artificial spreads in the color. The evolution of less UV activity with increasing age (rotation period) is in the direction that is expected. However, the scatter is quite large.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Improve sample selection with quality cuts for all data.&lt;/li&gt;
+  &lt;li&gt;Make similar plot for all available temperature bins&lt;/li&gt;
+  &lt;li&gt;Make plot as a function of Rossby number instead of rotation period&lt;/li&gt;
+  &lt;li&gt;Using a gyrochronology relation to infer rotation ages, plot the &lt;em&gt;expected&lt;/em&gt; UV flux (or NUV-V color) from the fits of Shkolnik &amp;amp; Barman (2014) versus the GALEX data.&lt;/li&gt;
+  &lt;li&gt;Can we see a saturation regime with this data? If so, this dataset may be a valuable and large addition to the available sources!&lt;/li&gt;
+  &lt;li&gt;(Longer term) extend this sample with rotation periods from K2!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jradavenport/GALEX_rot/blob/master/explore.ipynb&quot;&gt;Python notebook on Github&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Lunar Occultations of K2 Stars</title>
+   <link href="https://stellarcartography.space/2017/02/25/occult/"/>
+   <updated>2017-02-25T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2017/02/25/occult</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;https://stellarcartography.space/assets/Moon_map.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;I had an epiphany in early 2016: The moon goes through the K2 fields. I mean, of course it does by construction. K2 has to point along the ecliptic due to using the solar wind as a 3rd axis stabilizer. The moon travels along ecliptic. In hindsight, it is very obvious.&lt;/p&gt;
+
+&lt;p&gt;This provides a unique opportunity: &lt;strong&gt;Lunar occultation studies of K2 targets&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Such a project for community observers of occultations was described by the Occult software maker, Dave Herald, in this &lt;a href=&quot;https://stargazerslounge.com/topic/229660-ideas-for-astro-society-project/?do=findComment&amp;amp;comment=2479350&quot;&gt;forum comment&lt;/a&gt; as an idea pitched by &lt;a href=&quot;http://www.astro.cornell.edu/~jpl/James_Lloyd&quot;&gt;James Lloyd&lt;/a&gt;. The banner figure above is an example occultation in May 2017 of a K2 target observable from &lt;a href=&quot;http://www.apo.nmsu.edu&quot;&gt;APO&lt;/a&gt;, as computed by &lt;a href=&quot;http://www.lunar-occultations.com/iota/occult4.htm&quot;&gt;Occult v4.2.0&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Occultation#Occultations_by_the_Moon&quot;&gt;Lunar occultations&lt;/a&gt; can be used to estimate the angular diameter of background stars. It can also be used to determine if a star is actually a binary! Check out these toy examples I coded up:
+&lt;img src=&quot;https://stellarcartography.space/assets/occult1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;https://stellarcartography.space/assets/occult2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Occultations allow binaries to be detected at &lt;a href=&quot;http://adsabs.harvard.edu/abs/2014SerAJ.188....1J&quot;&gt;milli-arcsecond separations&lt;/a&gt;, &lt;em&gt;assuming the stars are separated along the direction of occultation&lt;/em&gt;, and can detect companions up to &lt;a href=&quot;http://adsabs.harvard.edu/abs/2003A%26A...397.1123R&quot;&gt;11 mag fainter&lt;/a&gt;! This means occultations could even be used to &lt;em&gt;detect&lt;/em&gt; exoplanets with next-generation large telescopes.&lt;/p&gt;
+
+&lt;p&gt;Here is a nice review of the methodology and technical considerations from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1994IAUS..158...71R&quot;&gt;1994 by Richichi&lt;/a&gt;, where the author notes the field of occultations has been relatively stagnant for 20 years. Unfortunately more than 20 years hence, the same is largely true, and LO remain a &lt;em&gt;fringe&lt;/em&gt; technique for stellar astronomers.&lt;/p&gt;
+
+&lt;h2 id=&quot;challenges&quot;&gt;Challenges&lt;/h2&gt;
+
+&lt;p&gt;The first and most obvious constraint to occultation work is the limited number of stars available for study. To wit, we only have 1 moon… though other Solar System body occultations of background stars are frequently observed (e.g. &lt;a href=&quot;http://adsabs.harvard.edu/abs/1963SvA.....6..525B&quot;&gt;Saturn&lt;/a&gt;, asteroids, etc), and are good targets for &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016PASP..128a8011S&quot;&gt;JWST study&lt;/a&gt; - but these are for understanding the Solar System, not stars!&lt;/p&gt;
+
+&lt;p&gt;We are also put off by the need for very high speed imaging, often at infrared wavelengths. The events last only a few 100 ms at best, requiring an ultra-fast CCD or video camera system. The Signal-to-Noise requirements of 1-10ms exposures means that occultations are typically only possible for very bright stars, often V&amp;lt;8.&lt;/p&gt;
+
+&lt;p&gt;There are other considerations for observing wavelength and telescope diameter, as we are working to measure the &lt;em&gt;diffraction&lt;/em&gt; of starlight by the lunar limb.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-solution&quot;&gt;A Solution?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://adsabs.harvard.edu/abs/2001A%26A...378.1100F&quot;&gt;Fors et. al (2001)&lt;/a&gt; described an alternative approach to measuring occultations that particularly appeals to me: drift scanning. (First proposed by &lt;a href=&quot;http://adsabs.harvard.edu/abs/1994PASP..106.1165S&quot;&gt;Sturmann in 1994&lt;/a&gt;) In this approach we read the CCD (camera chip) out at a rate that smears the starlight over many pixels. Since the CCD read is at a constant rate, the time evolution of the event is preserved, often at a resolution of a few ms. Note we are reading the camera while the shutter is open. This is basically the opposite of what &lt;a href=&quot;http://adsabs.harvard.edu/abs/2000AJ....120.1579Y&quot;&gt;SDSS did&lt;/a&gt;, where the CCD’s were read at the same rate the sky was drifting by, causing starlight to &lt;em&gt;not&lt;/em&gt; smear as the charge moved along the chip, but gave continuous images of the sky. (brilliant!)&lt;/p&gt;
+
+&lt;p&gt;This drift-scan approach is attractive because it only requires an off-the-shelf CCD chip, and a little help from some adventurous engineers (e.g. the readout clock speed needs to be tuned, shutter needs to stay open, etc)&lt;/p&gt;
+
+&lt;p&gt;With access to lots of telescope time (actually very little time per object!), and minimal changes to a facility instrument, a survey of occultations for K2 sources should be undertaken! I can think of 1 or 2 medium aperture telescopes this would be ideal for…&lt;/p&gt;
+
+&lt;h2 id=&quot;future&quot;&gt;Future&lt;/h2&gt;
+&lt;p&gt;Drift spectroscopy? Could be possible with a longslit spectrograph (one way time resolved spectroscopy was done in olden days…)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Distribution of Eclipsing Binaries in the SMC and LMC</title>
+   <link href="https://stellarcartography.space/2017/02/24/EB-LMC/"/>
+   <updated>2017-02-24T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2017/02/24/EB-LMC</id>
+   <content type="html">&lt;p&gt;There are some &lt;em&gt;awesome&lt;/em&gt; surveys of variability that are being under utilized. One such gem is OGLE, which now has a &lt;a href=&quot;https://arxiv.org/abs/1612.06394&quot;&gt;catalog of over 48k&lt;/a&gt; eclipsing binary star systems in the SMC and LMC!&lt;/p&gt;
+
+&lt;p&gt;With such a large sample, and near complete coverage of SMC/LMC (and in-between….) it would be amazing to see: &lt;strong&gt;are there variations of the eclipsing binary star population over an entire galaxy?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To do so, you might combine this variability survey with other spatial surveys that have traced the &lt;a href=&quot;https://arxiv.org/abs/0908.1422&quot;&gt;star formation history&lt;/a&gt; of the LMC/SMC… here’s a more &lt;a href=&quot;https://arxiv.org/abs/1501.05347&quot;&gt;recent paper&lt;/a&gt; on the subject.&lt;/p&gt;
+
+&lt;p&gt;We (or at least I) might naively expect that the orbital period distribution would be changed as a function of mean age of the stars in a spatial bin - in other words, dynamic processing would harden (shorten) the periods over time. Long period, detached systems would become more rare over time, and so also increasing the fraction of W UMa type systems.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1703.10597&quot;&gt;Here’s&lt;/a&gt; a catalog with some updated fits to the light curves for the OGLE-III LMC systems.&lt;/p&gt;
+
+&lt;p&gt;Finally, working in the temporal-spatial domain is good practice for the forthcoming “LSST era”. As they say, publish early, publish often!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Flux calibration in TESS</title>
+   <link href="https://stellarcartography.space/2016/01/07/fluxcal-in-tess/"/>
+   <updated>2016-01-07T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2016/01/07/fluxcal-in-tess</id>
+   <content type="html">&lt;p&gt;TESS will take (and save) Full Frame Images at 30 minute cadence for their entire mission. However, like Kepler (and K2), the TESS pipeline will provide a differential photometry data product. i.e. the data is &lt;em&gt;not&lt;/em&gt; flux calibrated.&lt;/p&gt;
+
+&lt;p&gt;The Guest-Investigator (GI) program for TESS does provide a level of funding for software projects if they are doing something value-added and unique for the community. Flux calibration should be very doable, given the FFI’s.&lt;/p&gt;
+
+&lt;p&gt;The question I see (and without enough knowledge of the TESS detector and hardware) is this:
+&lt;strong&gt;What are the calibration frames that are required to do this?&lt;/strong&gt;. Put another way, what &lt;em&gt;could&lt;/em&gt; Kepler have done to accomplish this?&lt;/p&gt;
+
+&lt;h3 id=&quot;some-relevant-literature&quot;&gt;Some relevant literature:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://adsabs.harvard.edu/abs/2010ApJ...713L..97B&quot;&gt;Bryson et al. (2010)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://adsabs.harvard.edu/abs/2013arXiv1309.0653H&quot;&gt;Hogg et al. (2013)&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;and associated GitHub &lt;a href=&quot;https://github.com/davidwhogg/SaveKepler&quot;&gt;repository&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://arxiv.org/abs/1601.04052&quot;&gt;Stubbs et al. (2016)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How would a giant planet affect binary star evolution?</title>
+   <link href="https://stellarcartography.space/2015/12/15/planets-binaries/"/>
+   <updated>2015-12-15T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2015/12/15/planets-binaries</id>
+   <content type="html">&lt;p&gt;There’s a problem with making short period (like, 0.2 day) M dwarf binaries. They take too long to form starting from relatively close binaries (e.g. 2 day), like…  a Hubble time to lose angular momentum. Yet, we see &lt;a href=&quot;http://arxiv.org/abs/1206.6056&quot;&gt;many systems&lt;/a&gt; like this.&lt;/p&gt;
+
+&lt;p&gt;Most people seem to care right now about how binary stars will affect planet evolution (e.g. ejecting planets from systems).&lt;/p&gt;
+
+&lt;p&gt;3rd body interactions have always been a popular culprit for forming such tight binaries. Galactic tidal influence might be able to do it too… but that’s usually thought about for &lt;a href=&quot;http://arxiv.org/abs/1301.3145&quot;&gt;wide binaries&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So the idea:
+Get best “Nbody model” (see my ignorance in its raw form!) of binary star system, with moderate separations (like, 1-10 days). Add a giant planet around 1 star. Run lots of simulations for 1 Gyr&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Project Dust Storm</title>
+   <link href="https://stellarcartography.space/2015/12/13/duststorm/"/>
+   <updated>2015-12-13T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2015/12/13/duststorm</id>
+   <content type="html">&lt;p&gt;Can we observe dust moving? In other words, can we see the proper motions of the ISM? It &lt;em&gt;should&lt;/em&gt; be moving around relative to us. There is some known about the shell of ISM around the Sun, but mystery remains about the small-scale structure of the ISM throughout the Milky Way.&lt;/p&gt;
+
+&lt;p&gt;There are 2 ways to approach this problem:&lt;/p&gt;
+
+&lt;h3 id=&quot;1-direct-observation&quot;&gt;1. Direct observation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;requires high-res molecular (radio/mm) maps over time, or high-res IR emission maps&lt;/li&gt;
+  &lt;li&gt;most current maps available in literature probably not sufficient over large ares, and certainly not stable over time.&lt;/li&gt;
+  &lt;li&gt;most IR surveys do not have the required resolution, but future missions would&lt;/li&gt;
+  &lt;li&gt;radio/mm probably has the resolution and stability needed to directly track the motions of the near-field ISM&lt;/li&gt;
+  &lt;li&gt;gives some info about density structure, but lots of info about kinematics and dynamical structure of the ISM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-variations-of-extinction-eb-v&quot;&gt;2. Variations of extinction, E(B-V)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving&lt;/li&gt;
+  &lt;li&gt;gives less specific detail on the motions of the ISM relative to the Sun&lt;/li&gt;
+  &lt;li&gt;does give info on the density structure of the ISM on potentially very small scales&lt;/li&gt;
+  &lt;li&gt;people have started to compare dust extinction maps, e.g. &lt;a href=&quot;http://arxiv.org/abs/1409.2495&quot;&gt;Planck vs WISE&lt;/a&gt; which may be a way forward&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hack Day Idea - Kepler FFI's</title>
+   <link href="https://stellarcartography.space/2015/12/04/hackidea2016/"/>
+   <updated>2015-12-04T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2015/12/04/hackidea2016</id>
+   <content type="html">&lt;p&gt;These images have been largely ignored, though the opinion of the community has been that if the right question were posed they would be a gold mine.&lt;/p&gt;
+
+&lt;p&gt;I don’t have the perfect question, but I have a few mediocre ones:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Can we find transients in the Kepler FFI’s?&lt;/li&gt;
+  &lt;li&gt;Can we find new eclipsing binaries or pulsators (use supersmoother, like w/ S82 work) using the FFI’s?&lt;/li&gt;
+  &lt;li&gt;Can we find stars with long term variability (e.g. LPVs, YSOs) using the FFI’s?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Images are &lt;a href=&quot;https://archive.stsci.edu/pub/kepler/ffi/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These transients could be from Novae/SuperNovae, or flares, or asteroids (less likely given 30min cadence)&lt;/p&gt;
+
+&lt;p&gt;A first-pass was done as an REU project &lt;a href=&quot;http://physics.nd.edu/assets/45942/vande_kolk_bryant.pdf&quot;&gt;years ago&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;And &lt;a href=&quot;http://arxiv.org/abs/1107.0297&quot;&gt;this is&lt;/a&gt; the only real result in the literature using FFI’s I’m aware of:&lt;/p&gt;
+
+&lt;p&gt;There are 53 of these images, w/ 30min exposures each, and an area of ~100 sq deg. While this pales in comparison to the data from the Kepler targeted objects, it is actually not a shabby time series catalog. Stripe 82 had an area of &lt;a href=&quot;http://arxiv.org/abs/1405.7382&quot;&gt;~300 sq deg&lt;/a&gt; and 70-90 exposures…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; Ben Montet is &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016arXiv160801316M&quot;&gt;on it!&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How many eclipsing binaries in an open cluster?</title>
+   <link href="https://stellarcartography.space/2015/11/15/binaries-in-clusters/"/>
+   <updated>2015-11-15T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2015/11/15/binaries-in-clusters</id>
+   <content type="html">&lt;p&gt;This is a simple question I’ve been interested in for a long time: Given excellent statistics about the stars we see in an open cluster, how many eclipsing binaries should we observe in a given dataset (e.g. Kepler)?&lt;/p&gt;
+
+&lt;p&gt;Given excellent observations of a cluster, we can constrain the properties of binaries.
+The parameters to fit would be the total binary fraction and the mass ratio distribution (maybe could be described using a slope or something).&lt;/p&gt;
+
+&lt;p&gt;An older cluster’s dynamical/tidal history through the Galaxy should affect it’s binary population. This might be an interesting way to constrain that history versus field stars. Or versus young clusters.&lt;/p&gt;
+
+&lt;p&gt;Other Cluster / EB ideas:
+It would be nice to have a definitive “Catalog of Variable Stars in M67” based on every available time domain dataset.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;K2&lt;/li&gt;
+  &lt;li&gt;2MASS Cal-PSWDB&lt;/li&gt;
+  &lt;li&gt;LINEAR&lt;/li&gt;
+  &lt;li&gt;Catalina&lt;/li&gt;
+  &lt;li&gt;several one-off datasets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Seems like a great hack-day idea too, doing really crappy forward or Monte Carlo model of what you should see, taking in best guesses for everything&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Recover Differential Rotation using ML?</title>
+   <link href="https://stellarcartography.space/2015/11/14/diffrot-ml/"/>
+   <updated>2015-11-14T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2015/11/14/diffrot-ml</id>
+   <content type="html">&lt;p&gt;We showed in Aigrain et al. (2015) that, so far, nobody has an accurate way to recover differential rotation from simulated light curves.&lt;/p&gt;
+
+&lt;p&gt;The most promising approaches revolved around studying the power spectrum or periodogram. The main peak (due to rotation) would be broadened or split.&lt;/p&gt;
+
+&lt;p&gt;However, this signature can also be caused by starspot decay and evolution, or the appearance of many spots, even without any differential rotation in our model (alpha).&lt;/p&gt;
+
+&lt;p&gt;I hypothesized that the periodogram peak structure might be able to recover some type of combined parameter that includes many of these degenerate stellar properties. Perhaps this would be enough information to be useful to theorists?&lt;/p&gt;
+
+&lt;p&gt;My attempts to find such a “starspot evolution parameter” based on the peak broadening in the periodogram has not shown any correlation with simulated properties from the Aigrain model light curves. I also tried a simple Random Forest regression of the peak width (and width relative to the period) versus every simulated property for all 1000 light curves. Nada&lt;/p&gt;
+
+&lt;p&gt;So the question/idea is: can we invert the problem, do machine learning on the power spectrum or periodogram itself to try and learn what the features of interest are? A giant amount of simulated light curves (even just using a super crappy evolving sine-curve code) would be helpful to tease out results….&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How many halo stars are in Kepler?</title>
+   <link href="https://stellarcartography.space/2015/11/13/halostars-in-kepler/"/>
+   <updated>2015-11-13T00:00:00-08:00</updated>
+   <id>https://stellarcartography.space/2015/11/13/halostars-in-kepler</id>
+   <content type="html">&lt;p&gt;There should be a small number of stars in the Kepler (and K2) data that belong to the halo, just based on their dynamics.&lt;/p&gt;
+
+&lt;p&gt;It might be interesting to find them!&lt;/p&gt;
+
+&lt;p&gt;These would have systematically older ages, and would be useful for stretching our gyrochronology methods.
+https://twitter.com/kantyellow/status/611463847610818561&lt;/p&gt;
+
+&lt;p&gt;It looks like Sebastian Lepine has already written a K2 proposal on this.
+http://keplerscience.arc.nasa.gov/K2/docs/Campaigns/C1/GO1061_Lepine.pdf&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

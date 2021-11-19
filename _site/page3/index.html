@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      The Stellar Cartography Lab &middot; Stars for Star Sake
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="public/css/poole.css">
+  <link rel="stylesheet" href="public/css/syntax.css">
+  <link rel="stylesheet" href="public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Genos:ital@1&family=Nova+Round&display=swap" rel="stylesheet">
+  
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body  class="theme-base-0d  layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="">
+          The Stellar Cartography Lab
+        </a>
+      </h1>
+      <p class="lead">An astronomy research group focusing on variable stars, centered around collaboration and asking creative questions.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <!-- <a class="sidebar-nav-item" href="https://github.com/StellarCartography//archive/v.zip">Download</a> -->
+      <a class="sidebar-nav-item" href="https://github.com/StellarCartography/">GitHub Page</a>
+      <span class="sidebar-nav-item">Currently v</span>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/01/07/fluxcal-in-tess/">
+        Flux calibration in TESS
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jan 2016</span>
+
+    <p>TESS will take (and save) Full Frame Images at 30 minute cadence for their entire mission. However, like Kepler (and K2), the TESS pipeline will provide a differential photometry data product. i.e. the data is <em>not</em> flux calibrated.</p>
+
+<p>The Guest-Investigator (GI) program for TESS does provide a level of funding for software projects if they are doing something value-added and unique for the community. Flux calibration should be very doable, given the FFI’s.</p>
+
+<p>The question I see (and without enough knowledge of the TESS detector and hardware) is this:
+<strong>What are the calibration frames that are required to do this?</strong>. Put another way, what <em>could</em> Kepler have done to accomplish this?</p>
+
+<h3 id="some-relevant-literature">Some relevant literature:</h3>
+
+<ul>
+  <li><a href="http://adsabs.harvard.edu/abs/2010ApJ...713L..97B">Bryson et al. (2010)</a></li>
+  <li><a href="http://adsabs.harvard.edu/abs/2013arXiv1309.0653H">Hogg et al. (2013)</a>
+    <ul>
+      <li>and associated GitHub <a href="https://github.com/davidwhogg/SaveKepler">repository</a></li>
+    </ul>
+  </li>
+  <li><a href="http://arxiv.org/abs/1601.04052">Stubbs et al. (2016)</a></li>
+</ul>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/12/15/planets-binaries/">
+        How would a giant planet affect binary star evolution?
+      </a>
+    </h1>
+
+    <span class="post-date">15 Dec 2015</span>
+
+    <p>There’s a problem with making short period (like, 0.2 day) M dwarf binaries. They take too long to form starting from relatively close binaries (e.g. 2 day), like…  a Hubble time to lose angular momentum. Yet, we see <a href="http://arxiv.org/abs/1206.6056">many systems</a> like this.</p>
+
+<p>Most people seem to care right now about how binary stars will affect planet evolution (e.g. ejecting planets from systems).</p>
+
+<p>3rd body interactions have always been a popular culprit for forming such tight binaries. Galactic tidal influence might be able to do it too… but that’s usually thought about for <a href="http://arxiv.org/abs/1301.3145">wide binaries</a></p>
+
+<p>So the idea:
+Get best “Nbody model” (see my ignorance in its raw form!) of binary star system, with moderate separations (like, 1-10 days). Add a giant planet around 1 star. Run lots of simulations for 1 Gyr</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/12/13/duststorm/">
+        Project Dust Storm
+      </a>
+    </h1>
+
+    <span class="post-date">13 Dec 2015</span>
+
+    <p>Can we observe dust moving? In other words, can we see the proper motions of the ISM? It <em>should</em> be moving around relative to us. There is some known about the shell of ISM around the Sun, but mystery remains about the small-scale structure of the ISM throughout the Milky Way.</p>
+
+<p>There are 2 ways to approach this problem:</p>
+
+<h3 id="1-direct-observation">1. Direct observation</h3>
+
+<ul>
+  <li>requires high-res molecular (radio/mm) maps over time, or high-res IR emission maps</li>
+  <li>most current maps available in literature probably not sufficient over large ares, and certainly not stable over time.</li>
+  <li>most IR surveys do not have the required resolution, but future missions would</li>
+  <li>radio/mm probably has the resolution and stability needed to directly track the motions of the near-field ISM</li>
+  <li>gives some info about density structure, but lots of info about kinematics and dynamical structure of the ISM</li>
+</ul>
+
+<h3 id="2-variations-of-extinction-eb-v">2. Variations of extinction, E(B-V)</h3>
+
+<ul>
+  <li>probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving</li>
+  <li>gives less specific detail on the motions of the ISM relative to the Sun</li>
+  <li>does give info on the density structure of the ISM on potentially very small scales</li>
+  <li>people have started to compare dust extinction maps, e.g. <a href="http://arxiv.org/abs/1409.2495">Planck vs WISE</a> which may be a way forward</li>
+</ul>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/12/04/hackidea2016/">
+        Hack Day Idea - Kepler FFI's
+      </a>
+    </h1>
+
+    <span class="post-date">04 Dec 2015</span>
+
+    <p>These images have been largely ignored, though the opinion of the community has been that if the right question were posed they would be a gold mine.</p>
+
+<p>I don’t have the perfect question, but I have a few mediocre ones:</p>
+
+<ol>
+  <li>Can we find transients in the Kepler FFI’s?</li>
+  <li>Can we find new eclipsing binaries or pulsators (use supersmoother, like w/ S82 work) using the FFI’s?</li>
+  <li>Can we find stars with long term variability (e.g. LPVs, YSOs) using the FFI’s?</li>
+</ol>
+
+<p>Images are <a href="https://archive.stsci.edu/pub/kepler/ffi/">here</a></p>
+
+<p>These transients could be from Novae/SuperNovae, or flares, or asteroids (less likely given 30min cadence)</p>
+
+<p>A first-pass was done as an REU project <a href="http://physics.nd.edu/assets/45942/vande_kolk_bryant.pdf">years ago</a></p>
+
+<p>And <a href="http://arxiv.org/abs/1107.0297">this is</a> the only real result in the literature using FFI’s I’m aware of:</p>
+
+<p>There are 53 of these images, w/ 30min exposures each, and an area of ~100 sq deg. While this pales in comparison to the data from the Kepler targeted objects, it is actually not a shabby time series catalog. Stripe 82 had an area of <a href="http://arxiv.org/abs/1405.7382">~300 sq deg</a> and 70-90 exposures…</p>
+
+<p><strong>Update:</strong> Ben Montet is <a href="http://adsabs.harvard.edu/abs/2016arXiv160801316M">on it!</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2015/11/15/binaries-in-clusters/">
+        How many eclipsing binaries in an open cluster?
+      </a>
+    </h1>
+
+    <span class="post-date">15 Nov 2015</span>
+
+    <p>This is a simple question I’ve been interested in for a long time: Given excellent statistics about the stars we see in an open cluster, how many eclipsing binaries should we observe in a given dataset (e.g. Kepler)?</p>
+
+<p>Given excellent observations of a cluster, we can constrain the properties of binaries.
+The parameters to fit would be the total binary fraction and the mass ratio distribution (maybe could be described using a slope or something).</p>
+
+<p>An older cluster’s dynamical/tidal history through the Galaxy should affect it’s binary population. This might be an interesting way to constrain that history versus field stars. Or versus young clusters.</p>
+
+<p>Other Cluster / EB ideas:
+It would be nice to have a definitive “Catalog of Variable Stars in M67” based on every available time domain dataset.</p>
+
+<ul>
+  <li>K2</li>
+  <li>2MASS Cal-PSWDB</li>
+  <li>LINEAR</li>
+  <li>Catalina</li>
+  <li>several one-off datasets</li>
+</ul>
+
+<p>Seems like a great hack-day idea too, doing really crappy forward or Monte Carlo model of what you should see, taking in best guesses for everything</p>
+
+  </div>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="page4">Older</a>
+  
+  
+    
+      <a class="pagination-item newer" href="page2">Newer</a>
+    
+  
+</div>
+    </div>
+
+  </body>
+</html>

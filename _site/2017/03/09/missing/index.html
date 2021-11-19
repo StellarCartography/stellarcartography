@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Missing Transits in Kepler &middot; The Stellar Cartography Lab
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="public/css/poole.css">
+  <link rel="stylesheet" href="public/css/syntax.css">
+  <link rel="stylesheet" href="public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Genos:ital@1&family=Nova+Round&display=swap" rel="stylesheet">
+  
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body  class="theme-base-0d  layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="">
+          The Stellar Cartography Lab
+        </a>
+      </h1>
+      <p class="lead">An astronomy research group focusing on variable stars, centered around collaboration and asking creative questions.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <!-- <a class="sidebar-nav-item" href="https://github.com/StellarCartography//archive/v.zip">Download</a> -->
+      <a class="sidebar-nav-item" href="https://github.com/StellarCartography/">GitHub Page</a>
+      <span class="sidebar-nav-item">Currently v</span>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Missing Transits in Kepler</h1>
+  <span class="post-date">09 Mar 2017</span>
+  <p>One of the more amusing SETI articles in recent memory is one suggesting lasers could be used to <a href="https://arxiv.org/abs/1603.08928">“cloak” a planet’s transit</a>, by essentially filling in the missing starlight occulted by the planet. This raises an interesting observable question: <strong>Do we ever see transits go missing?</strong></p>
+
+<p>There have been <a href="http://keplerlightcurves.blogspot.com/2012/09/kic-10319590-disappearing-eclipsing.html">examples of eclipses</a> (i.e. two stars) changing depths over the course of the Kepler mission. These are neat, and usually attributed to the viewing angle of the system changing.</p>
+
+<p>Transit Timing Variations (TTVs) are all the rage, as the slow drift/change of transit occurrence times points to additional planets/bodies in the system. What you observe is a periodic transit event slowly falling ahead/behind schedule as the 3rd body moves around it.</p>
+
+<p>However this idea is much simpler, and driven by the SETI question: Do any transits fail to show up when we’d expect them to?</p>
+
+<p>##Game plan:</p>
+
+<ul>
+  <li>Get list of all available transiting planets in Kepler <em>without</em> transit timing variations (TTVs)</li>
+  <li>Obtain long cadence (30-min) light curves for each system</li>
+  <li>Using published periods &amp; times for transits, step through light curve and verify transit is present <strong>if</strong> data is available (i.e. missing data doesn’t count)</li>
+</ul>
+
+<p>On some level this is a “reality check” exercise. I would basically not expect to find any published planets to have missing transits, as I think this would cause undue scatter in the phase-folded data that would have led to their rejection. However given the entertaining SETI angle, <em>it does seem worth it to at least check!</em></p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2021/11/18/scallops/">
+            Flares and Scallops
+            <small>18 Nov 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2021/11/16/gaia-flares/">
+            Flares in Gaia DR3
+            <small>16 Nov 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2018/07/05/mentorship/">
+            Mentorship
+            <small>05 Jul 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

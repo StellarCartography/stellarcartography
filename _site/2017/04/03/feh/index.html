@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Photometric Metallicities &middot; The Stellar Cartography Lab
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="public/css/poole.css">
+  <link rel="stylesheet" href="public/css/syntax.css">
+  <link rel="stylesheet" href="public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Genos:ital@1&family=Nova+Round&display=swap" rel="stylesheet">
+  
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body  class="theme-base-0d  layout-reverse">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="">
+          The Stellar Cartography Lab
+        </a>
+      </h1>
+      <p class="lead">An astronomy research group focusing on variable stars, centered around collaboration and asking creative questions.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <!-- <a class="sidebar-nav-item" href="https://github.com/StellarCartography//archive/v.zip">Download</a> -->
+      <a class="sidebar-nav-item" href="https://github.com/StellarCartography/">GitHub Page</a>
+      <span class="sidebar-nav-item">Currently v</span>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Photometric Metallicities</h1>
+  <span class="post-date">03 Apr 2017</span>
+  <p>Here is a cool figure that I made with <a href="http://www.sarahjaneschmidt.com">S. J. Schmidt</a> a few years ago at a research <a href="https://www.instagram.com/p/xvLZM1lCMc/">retreat in beautiful Friday Harbor</a>, based on work she was doing with <a href="http://www.sdss3.org/surveys/apogee.php">APOGEE</a> + <a href="https://www.nasa.gov/mission_pages/WISE/main/index.html">WISE</a> data for low-mass stars (see very relevant paper <a href="http://adsabs.harvard.edu/abs/2016MNRAS.460.2611S">here</a>)</p>
+
+<p><img src="https://stellarcartography.space/assets/w1w2_rz_feh.png" alt="" /></p>
+
+<p>We added to her APOGEE work by including dwarf stars processed by the SDSS Stellar Parameter Pipeline (SSPP).</p>
+
+<p>What comes out of this figure is a potentially useful result: you can measure the metallicity of a star (roughly) using it’s WISE (W1-W2) color!</p>
+
+<p>For M dwarfs, the [Fe/H] values can be determined by subtracting the measured (W1-W2) color from the <a href="https://arxiv.org/abs/1403.1875">stellar locus</a> value for a given (r-z) color. This is a fairly small amplitude signal, however, with the offset in (W1-W2) having a max of +/-0.1 mag. The effect is less pronounced for earlier type stars (GK) measured by SDSS, but is still in the same direction about the locus.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+  <li>What is the cause of this signal?
+    <ul>
+      <li>molecular features that show up for cool stars and are metallicity dependent I guess</li>
+    </ul>
+  </li>
+  <li>If we update the sample w/ latest public data from SDSS (BOSS) and APOGEE, is the signal still there?</li>
+  <li>Can we find more <a href="https://arxiv.org/abs/1410.0014">cool dwarfs</a> in APOGEE? (&gt;M4)
+    <ul>
+      <li>(W1-W2) appears to broaden through M dwarfs. Does it continue?</li>
+    </ul>
+  </li>
+  <li>Is the signal at all measurable for earlier type (GK) stars?</li>
+  <li>Fit a 3D polynomial to parameterize</li>
+  <li>Redo as function of (J-W1) instead of (r-z)
+    <ul>
+      <li>then doesn’t depend on SDSS photometry, can be done for <em>all WISE stars</em>!</li>
+    </ul>
+  </li>
+  <li>[Fe/H] map of nearby Milky Way?
+    <ul>
+      <li>use Gaia to pick only dwarfs</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>What I need:</strong> People who know more about the current state of the field for “chemical cartography” of our Milky Way. Is it still exciting to measure [Fe/H] gradients? Look for kinematic+chemical substructure?</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2021/11/18/scallops/">
+            Flares and Scallops
+            <small>18 Nov 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2021/11/16/gaia-flares/">
+            Flares in Gaia DR3
+            <small>16 Nov 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2018/07/05/mentorship/">
+            Mentorship
+            <small>05 Jul 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+# Dependencies
+# markdown:         redcarpet #<< remove to get to work w/ v>3 Jekyll
+markdown:   kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+# relative_permalinks: true #<< remove to get to work w/ v>3 Jekyll
+
+# Setup
+title:            The Stellar Cartography Lab
+tagline:          'Stars for Star Sake'
+description:      'An astronomy research group focusing on variable stars, centered around collaboration and asking creative questions.'
+url:              https://stellarcartography.space
+baseurl:          ''
+
+author:
+  name:           'James Davenport'
+  url:            https://twitter.com/jradavenport
+
+plugins: [jekyll-paginate] # add to get to work w/ v>3 Jekyll
+paginate:         5
+paginate_path: "page:num"
+
+# Custom vars
+# version:          2.1.0
+
+github:
+  repo:           https://github.com/StellarCartography/
